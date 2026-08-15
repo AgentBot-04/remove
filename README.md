@@ -25,6 +25,18 @@ Vendors / ecosystems (class-level): **Claude**, **Gemini / SynthID-Text**, **Ope
 
 **Latest release:** [v0.5.0](https://github.com/guillaumemeyer/watermarks-remover/releases/tag/v0.5.0)
 
+## Independent desktop client
+
+For users who prefer a packaged native GUI, [MetaClean](https://github.com/Moresyl/metaclean)
+is an independent MIT-licensed Rust/Tauri desktop application with installers for
+Windows, macOS (Apple Silicon and Intel), and Linux. It provides drag-and-drop batch
+processing, a system tray, a Windows Explorer context-menu integration, and local
+cleanup history.
+
+MetaClean does not call this repository's Python service and its supported formats and
+cleaning guarantees differ. Review its [support matrix and safety notes](https://github.com/Moresyl/metaclean#supported-formats)
+before choosing between the projects.
+
 Skill path: [`skills/remove-ai-marks/`](skills/remove-ai-marks/)  
 Service path: [`service/`](service/)  
 (migration: formerly `remove-claude-marks`; slash alias `/remove-claude-marks` still documented)
