@@ -29,6 +29,19 @@ Skill path: [`skills/remove-ai-marks/`](skills/remove-ai-marks/)
 Service path: [`service/`](service/)  
 (migration: formerly `remove-claude-marks`; slash alias `/remove-claude-marks` still documented)
 
+## Desktop app (no terminal needed)
+
+```bash
+python3 gui/launch.py
+```
+
+Or double-click `gui/WatermarksRemover.bat` (Windows) / `gui/watermarks-remover.command` (macOS).
+Drag files in, read the verdict, click clean. Paste text to see hidden characters revealed in
+place. Python 3.10+ stdlib only — no packages to install. Runs on **Windows, macOS and Linux**,
+loopback-only, with every action mapped to the same scripts the CLI calls.
+
+Details: [`gui/README.md`](gui/README.md)
+
 ## Install (agent skill)
 
 The skill ships **no code** — it calls the service over HTTP. Install the skill (markdown only) and start the service, then set `WATERMARKS_SERVICE_URL` if it is not `http://127.0.0.1:8765`.
